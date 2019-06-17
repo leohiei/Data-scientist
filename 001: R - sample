@@ -1,0 +1,13 @@
+# a função sample é a maneira mais simples de gerar resultados aleatórios no R; exemplo abaixo:#
+#Chama os dados iris#
+iris
+#mostra a dos dados (linhas, colunas)#
+dim(iris)
+# nome da variavel = função (parametro de onde buscar dados para gerar amostra(a cada geração de amostra exibir 0 ou 1),#
+# quantidade de amostras que quero, definindo parametro como verdadeiro, vetor de problabilidade onde 0 e 1 tem a mesma#
+# chance [50%] de serem incluídos)#
+amostra = sample(c(0, 1), 150, replace = TRUE, prob = c(0.5, 0.5))
+# exibe quantas amostras iguais a 1 foram geradas#
+length(amostra[amostra == 1])
+# exibe quantas amosstras iguais a 0 foram geradas#
+length(amostra[amostra == 0])
