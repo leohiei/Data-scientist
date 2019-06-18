@@ -1,0 +1,14 @@
+#apresenta informações do conjunto de dados 
+summary(iris)
+# instalando pacote sampling caso não o tenha no programa // Ignorar caso sim
+# install.packages("sampling")
+# carregando pacote 
+library(sampling)
+# criando var e executando função strata
+# var = função(pacote,vetor de colunas("coluna")), tamanho=vetor(as 3 espécies com 25 cada), 
+# metodo para gerar dados aleatórios="modelo da constante")
+amostra = strata(iris,c("Species"), size = c(25, 25, 25), method = "srswor")
+# exibe resulltado da var
+amostra
+# gerar resumo da var
+summary(amostra)
