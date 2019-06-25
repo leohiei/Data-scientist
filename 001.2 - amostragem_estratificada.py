@@ -1,0 +1,35 @@
+import pandas as pd
+#Função utilizada para fazer a divisão da base dos dados
+from sklearn.model_selection import train_test_split
+
+iris = pd.read_csv('iris.csv')
+iris
+iris['class'].value_counts()
+
+# gerar uma amostragem com apenas 50% dos dados
+# função iloc seleciona partes específicas da base de  dados
+#[ dois pontos e vírgula seleciona todas as linhas
+#vai do atributo 0 ao 4
+# stratify para selecionar a coluna a ser dividida
+#abaixo dividimos as colunas 0 a 3 para x e coluna 4 para y,
+# todas com metade dos dados
+x, _, y, _ = train_test_split(iris.iloc[:, 0:4], iris.iloc[:, 4], 
+                              test_size=0.5, stratify = iris.iloc[:,4])
+y.value_counts()
+
+infert = pd.read_csv('infert.csv')
+infert['education'].value_counts()
+
+# realizando uma divisão do total de dados para que seja mais justa
+# mesma metodologia do R dividir o valor de uma idade especifica pelo total
+# multiplicar por 100, pois quero 100 dados totais
+# 6-11yrs  (120/248) * 100
+# 12+ yrs (116/248) * 100
+# 0-5yrs (12/248) * 100
+# arredondar os resultados
+
+# o traço serve ´para que não carrguemos outra parte da base de dados, 
+#caso contrário seria colocado o complemento de cada dados da variável
+x1, _, y1, _ = train_test_split(infert.iloc[:, 2:9], infert.iloc[:, 1], 
+                                test_size =0.6, stratify = infert.iloc[:, 1] )
+y1.value_counts()
