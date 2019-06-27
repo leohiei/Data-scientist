@@ -1,0 +1,15 @@
+# Criando a var
+jogador_salario = c(40000, 12000, 18000, 250000, 30000, 140000, 300000, 40000, 800000)
+# sumário dos dados, apresenda já alguns calculos
+summary(jogador_salario)
+# calculo da média
+mean(jogador_salario)
+# calculo da mediana (ponto central)
+median(jogador_salario)
+# calculo dos quartis; criar var e chamar resultado
+quartis = quantile(jogador_salario)
+quartis
+# apresentar resultado apenas de um quartil, por exemplo, o terceiro
+quartis[4]
+# cálculo de desvio padrão
+sd(jogador_salario)
