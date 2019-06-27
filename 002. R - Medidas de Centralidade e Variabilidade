@@ -1,6 +1,6 @@
 # Criando a var
 jogador_salario = c(40000, 12000, 18000, 250000, 30000, 140000, 300000, 40000, 800000)
-# sumário dos dados, apresenda já alguns calculos
+# sumário dos dados, apresenta já alguns calculos
 summary(jogador_salario)
 # calculo da média
 mean(jogador_salario)
