@@ -28,3 +28,21 @@ pbinom(4, 4, 0.25)
 # Numa prova de 12 questões, qual a probabilidade de acertar 7 questões, 
 # sendo que cada questão tem 4 alternativas
 dbinom(7, 12, 0.25)
+
+> dbinom(3,5, 0.5)
+[1] 0.3125
+> dbinom(0, 4, 0.25)
+[1] 0.3164063
+> dbinom(1, 4, 0.25)
+[1] 0.421875
+> dbinom(2, 4, 0.25)
+[1] 0.2109375
+> dbinom(3, 4, 0.25)
+[1] 0.046875
+> dbinom(4, 4, 0.25)
+[1] 0.00390625
+> pbinom(4, 4, 0.25)
+[1] 1
+> dbinom(7, 12, 0.25)
+[1] 0.01147127
+> 
