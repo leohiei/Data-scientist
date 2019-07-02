@@ -28,3 +28,34 @@ binom.pmf(4, 4, 0.5)
 binom.pmf(7, 12, 0.25)
 # exibindo porcentagem
 binom.pmf(7, 12, 0.25) * 100
+
+from scipy.stats import binom
+
+prob = binom.pmf(3, 5, 0.5)
+
+binom.pmf(3, 5, 0.5)
+Out[3]: 0.3125
+
+binom.pmf(0, 4, 0.25)
+Out[4]: 0.31640625000000006
+
+binom.pmf(1, 4, 0.25)
+Out[5]: 0.4218750000000001
+
+binom.pmf(2, 4, 0.25)
+Out[6]: 0.21093750000000006
+
+binom.pmf(3, 4, 0.25)
+Out[7]: 0.046875000000000035
+
+binom.pmf(4, 4, 0.25)
+Out[8]: 0.003906250000000001
+
+binom.pmf(4, 4, 0.5)
+Out[9]: 0.0625
+
+binom.pmf(7, 12, 0.25)
+Out[10]: 0.011471271514892573
+
+binom.pmf(7, 12, 0.25) * 100
+Out[11]: 1.1471271514892574
