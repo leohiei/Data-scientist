@@ -24,3 +24,17 @@ pnorm(6, 8, 2) + pnorm(10, 8, 2, lower.tail = F)
   # Como o objeto é de média cumulativa, ou seja, da direita (10), passa a média (8) até a esquerda
     # subtraímos a direita da esquerda
 pnorm(10, 8, 2) - pnorm(8, 8, 2)
+------------------------------------------------
+> pnorm(6, 8, 2)
+[1] 0.1586553
+> pnorm(6, 8, 2, lower.tail = F)
+[1] 0.8413447
+> 1 - pnorm(6, 8, 2)
+[1] 0.8413447
+> pnorm(6, 8, 2) + pnorm(10, 8, 2, lower.tail = F)
+[1] 0.3173105
+> pnorm(6, 8, 2) + (1 - pnorm(10, 8, 2))
+[1] 0.3173105
+> pnorm(10, 8, 2) - pnorm(8, 8, 2)
+[1] 0.3413447
+> 
