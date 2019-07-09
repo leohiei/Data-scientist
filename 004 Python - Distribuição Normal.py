@@ -24,3 +24,17 @@ norm.cdf(6, 8, 2) + norm.sf(10, 8, 2)
     #8 quilos? Como o objeto é de média cumulativa, ou seja, da direita (10), 
         #passa a média (8) até a esquerda, subtraímos a direita da esquerda
 norm.cdf(10, 8, 2) - norm.cdf(8, 8, 2)
+--------------------------------------
+from scipy.stats import norm
+
+norm.cdf(6, 8, 2)
+Out[2]: 0.15865525393145707
+
+norm.sf(6, 8, 2)
+Out[3]: 0.8413447460685429
+
+norm.cdf(6, 8, 2) + norm.sf(10, 8, 2)
+Out[4]: 0.31731050786291415
+
+norm.cdf(10, 8, 2) - norm.cdf(8, 8, 2)
+Out[5]: 0.3413447460685429
