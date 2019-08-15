@@ -11,3 +11,14 @@ poisson.cdf(3, 2)
                                                        # mais que 3 acidentes?
   # X > 3, media(lambda) = 2
 poisson.sf(3, 2)
+----------------------------
+from scipy.stats import poisson
+
+poisson.pmf(3, 2)
+Out[2]: 0.18044704431548356
+
+poisson.cdf(3, 2)
+Out[3]: 0.857123460498547
+
+poisson.sf(3, 2)
+Out[4]: 0.14287653950145296
