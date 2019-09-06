@@ -25,8 +25,6 @@ plot(tk)
 > tratamento = read.csv(file.choose(), sep = ";", header = T)
 > fix(tratamento)
 > boxplot(tratamento$Horas ~ tratamento$Remedio)
-> # analise de variancia de um fator
->   #aov = analise of variance
 > an = aov(Horas ~ Remedio, data = tratamento)
 > summary(an)
             Df Sum Sq Mean Sq F value Pr(>F)
